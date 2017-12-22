@@ -1,0 +1,46 @@
+# Limits on velocity (better take Umin-Umax = Vmin-Vmax)
+#-300.0     # Umin [km.s-1]
+#200.0      # Umax [km.s-1]
+#-10.0     # Vmin [km.s-1]
+#490.0      # Vmax [km.s-1]
+0.0     # Umin [km.s-1]
+300.0      # Umax [km.s-1]
+-150.0     # Vmin [km.s-1]
+150.0      # Vmax [km.s-1]
+
+# Limits on scale
+4          # Jmax
+
+# Confidence level
+3.0        # sigma
+
+# Constraints on velocity uncertainty
+34.0         # sigma_U_max [km.s-1]
+34.0         # sigma_V_max [km.s-1]
+1000.0      # sigma_W_max [km.s-1]
+100.0       # sigma_par_par
+0.3         # limit_SN [kpc]
+
+# Size of bins (same for U and V, more convenient)
+1.0       # delta_bins_min [km.s-1]
+1.0       # delta_bins_max [km.s-1]
+0.10       # delta_bins [km.s-1]
+
+# Select the axes (U-V plan : 0 | V-sqrt(U^2 + 2*V^2) plan : 1)
+1
+
+# Definition of the thin/thick disk : [Mg/Fe] > L_TD_D = thick disk. Thin disk instead
+0.2
+
+# Minimum of stars in structures
+2
+
+# Index Monte-Carlo (no : 1 | yes : 2 - ... number of simulations)
+2
+
+# Index sub-sample (1: AS | 2: TD/D | 3: SN/BSN | 4: AS/TD/D | 5: AS/SN/BSN | 6: SN/BSN/TD/D | 7: AS/SN/BSN/TD/D )
+1
+
+# Number minimal/maximal of simulation
+0
+100
